@@ -4,7 +4,6 @@
   background: #147d73;
   color: white;
   padding: 19px 16px;
-  flex: 1 1 auto;
   height: fit-content;
   .info {
     display: flex;
@@ -20,7 +19,7 @@
       font-weight: 400;
     }
   }
-  .notification {
+  .action-items {
     display: flex;
     justify-content: flex-end;
     flex: 1 1 auto;

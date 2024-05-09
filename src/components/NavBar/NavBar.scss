@@ -1,42 +1,51 @@
 .navbar {
   width: 260px;
+  @media (max-width: 850px) {
+    width: auto;
+  }
   .navbar-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    .logo {
-      height: 57px;
-      width: 86px;
-      margin-left: 29px;
-      margin-top: 12px;
-      margin-bottom: 11px;
-    }
-    .item-container {
-      margin-top: 26px;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+    .top-section {
       width: -webkit-fill-available;
-      .item-section {
-        .separator {
-            border:1px solid #F0F0F0;
+      display: flex;
+      flex-direction: column;
+      .logo {
+        height: 57px;
+        width: 86px;
+        margin-left: 29px;
+        margin-top: 12px;
+        margin-bottom: 11px;
+      }
+      .item-container {
+        margin-top: 26px;
+        width: -webkit-fill-available;
+        .item-section {
+          .separator {
+            border: 1px solid #f0f0f0;
             margin-left: 32px;
-        }
-        .navbar-item {
-          display: flex;
-          align-items: center;
-          padding: 12px 25px 12px 32px;
-          justify-content: space-between;
-          .new-item {
-            color: #dc3545;
-            font: 0.75rem;
-            font-weight: 600;
-            :hover {
-              color: #dc3545;
-              cursor: pointer;
-            }
           }
-          .item {
+          .navbar-item {
             display: flex;
-            gap: 12px;
-            .name {
+            align-items: center;
+            padding: 12px 25px 12px 32px;
+            justify-content: space-between;
+            .new-item {
+              color: #dc3545;
+              font: 0.75rem;
+              font-weight: 600;
+              :hover {
+                color: #dc3545;
+                cursor: pointer;
+              }
+            }
+            .item {
+              display: flex;
+              gap: 12px;
+              .name {
                 font-size: 1rem;
                 color: #637381;
                 &:hover {
@@ -44,9 +53,18 @@
                   cursor: pointer;
                 }
               }
+            }
           }
-          
         }
+      }
+    }
+    .nav-footer {
+        margin: 29px;
+        width: -webkit-fill-available;
+        display: flex;
+      img {
+        height: 28px;
+        width: 107px;
       }
     }
   }

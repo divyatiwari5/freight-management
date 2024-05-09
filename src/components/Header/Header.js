@@ -5,7 +5,7 @@ const Header = () => {
         <span className="name">Hello, Ekemini</span>
         <span className="date">Tue, 13 March 2024</span>
       </div>
-      <div className="notification">
+      <div className="action-items">
         <div className="icons">
           <div className="circle-frame">
             <img src="assets/bellIcon.svg" alt="notification" />

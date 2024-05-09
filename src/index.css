@@ -14,3 +14,5 @@ code {
 
 @import "./components/Header/Header.scss";
 @import "./components/NavBar/NavBar.scss";
+@import "./components/Dashboard/Dashboard.scss";
+@import "./components/Header/HeaderMobo.scss";

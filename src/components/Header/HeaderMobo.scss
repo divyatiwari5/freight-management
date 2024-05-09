@@ -1,0 +1,48 @@
+.header-mobo-container {
+  display: flex;
+  margin: 19px 12px 19px 28px;
+  .logo {
+    width: 86px;
+    height: 57px;
+  }
+  .action-items {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    align-items: center;
+    gap: 12px;
+    .profile {
+      display: flex;
+      gap: 4px;
+      margin-left: 32px;
+      flex-direction: column;
+      .title {
+        font-size: 1rem;
+        color: #212b36;
+      }
+      .subtitle {
+        font-size: 0.75rem;
+        color: #637381;
+      }
+    }
+    .avatar {
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.separator {
+  border: 1px solid #f0f0f0;
+}
+
+.close-navbar {
+  background: #147d73;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  img {
+    margin-top: 10px;
+  }
+}
