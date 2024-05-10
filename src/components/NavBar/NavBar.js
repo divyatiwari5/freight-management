@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import useDeviceType from "../../utility/useDeviceType";
 
 const NavBar = () => {
@@ -7,42 +8,49 @@ const NavBar = () => {
       icon: "assets/dashboard.svg",
       isNew: false,
       isSeparateSection: false,
+      link: '/dashboard'
     },
     {
       name: "Orders",
       icon: "assets/order.svg",
       isNew: false,
       isSeparateSection: false,
+      link: '/'
     },
     {
       name: "Customers",
       icon: "assets/customer.svg",
       isNew: false,
       isSeparateSection: false,
+      link: '/'
     },
     {
       name: "Products",
       icon: "assets/product.svg",
       isNew: false,
       isSeparateSection: false,
+      link: '/'
     },
     {
       name: "Pricing",
       icon: "assets/pricing.svg",
       isNew: true,
       isSeparateSection: false,
+      link: '/'
     },
     {
       name: "Freight",
       icon: "assets/freight.svg",
       isNew: true,
       isSeparateSection: false,
+      link: '/freight'
     },
     {
       name: "Settings",
       icon: "assets/settings.svg",
       isNew: false,
       isSeparateSection: true,
+      link: '/'
     },
   ];
   const deviceType = useDeviceType();
@@ -57,7 +65,9 @@ const NavBar = () => {
           )}
           <div className="item-container">
             {dashboardItems.map((item, i) => (
-              <div key={i} className="item-section">
+              <NavLink key={i} to={item.link}
+              className={({ isActive }) =>`nav-link ${isActive && 'active'}`}>
+                <div  className="item-section">
                 {item.isSeparateSection && <hr className="separator" />}
                 <div className="navbar-item">
                   <div className="item">
@@ -68,6 +78,8 @@ const NavBar = () => {
                   {item.isNew && <span className="new-item">NEW</span>}
                 </div>
               </div>
+              </NavLink>
+            
             ))}
           </div>
         </div>

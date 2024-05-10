@@ -16,3 +16,6 @@ code {
 @import "./components/NavBar/NavBar.scss";
 @import "./components/Dashboard/Dashboard.scss";
 @import "./components/Header/HeaderMobo.scss";
+@import "./components/FreightManagement/FreightManagement.scss";
+@import "./components/FreightManagement/SubRegions.scss";
+@import "./components/FreightManagement/AddPricing.scss";

@@ -1,0 +1,64 @@
+.freight-container {
+   background: #F8FAFC;
+   .content {
+    margin: 26px;
+    background: white;
+    padding: 30px 32px;
+    border-radius: 7px;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        .heading {
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+            align-items: flex-start;
+            .title {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .subtitle {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #637381;
+            }
+        }
+        .action-items {
+            display: flex;
+            gap: 14px;
+            .cancel-btn {
+                background: white;
+                padding: 13px 35px;
+                border: 0.25px solid #E7E7E7;
+                font-size: 0.938rem;
+                font-weight: 600;
+                letter-spacing: -0.18px;
+                border-radius: 8px;
+                height: 48px;
+                width: 120px;
+            }
+            .save-btn {
+                background: #147D73;
+                padding: 13px 35px;
+                font-size: 0.938rem;
+                font-weight: 600;
+                letter-spacing: -0.18px;
+                border-radius: 8px;
+                color: white;
+                border: none;
+                height: 48px;
+                width: 120px;
+            }
+        }
+    }
+    .manage-freight {
+        display: flex;
+        margin-top: 75px;
+        gap: 79px;
+        .info {
+            width: 400px;
+        }
+    }
+   }
+   
+}

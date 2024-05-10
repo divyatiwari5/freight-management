@@ -69,3 +69,12 @@
     }
   }
 }
+
+a {
+  text-decoration: none;
+}
+.nav-link {
+  :active {
+    color: #147D73;
+  }
+}
